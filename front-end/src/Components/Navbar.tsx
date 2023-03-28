@@ -1,4 +1,21 @@
-const Navbar = () => {
+import DarkIcon from "./DarkIcon";
+import LightIcon from "./LightIcon";
+
+const Navbar = ({
+  theme,
+  toggleTheme,
+}: {
+  theme: string;
+  toggleTheme: () => void;
+}) => {
+  const renderIcon = () => {
+    if (theme === "dark") {
+      return <LightIcon />;
+    } else {
+      return <DarkIcon />;
+    }
+  };
+
   return (
     <div className="navbar bg-base-200">
       <div className="navbar-start">
@@ -155,8 +172,8 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Get started</a>
+      <div className="navbar-end" onClick={toggleTheme}>
+        {renderIcon()}
       </div>
     </div>
   );
