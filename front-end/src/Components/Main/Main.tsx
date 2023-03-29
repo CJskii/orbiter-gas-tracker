@@ -1,9 +1,11 @@
 import React from "react";
-import Header from "./Header";
-import GasLabel from "./GasLabel";
-import GasInfo from "./GasInfo";
+import Header from "./Header/Header";
+import GasLabel from "./Header/GasLabel";
+import GasInfo from "./Header/GasInfo";
 import Charts from "./Charts/Charts";
 import Costs from "./Costs/Costs";
+import Average from "./Average/Average";
+import GasExplained from "./Explained/GasExplained";
 
 const Main = () => {
   return (
@@ -13,6 +15,8 @@ const Main = () => {
       <GasInfo />
       <Charts />
       <Costs />
+      <Average />
+      <GasExplained />
     </main>
   );
 };

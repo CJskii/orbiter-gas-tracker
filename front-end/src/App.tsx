@@ -2,6 +2,7 @@ import { useState } from "react";
 import Donate from "./Components/Navbar/Donate";
 import Navbar from "./Components/Navbar/Navbar";
 import Main from "./Components/Main/Main";
+import Footer from "./Components/Footer/Footer";
 function App() {
   const [theme, setTheme] = useState("dark");
 
@@ -21,6 +22,7 @@ function App() {
       <Donate theme={theme} />
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Main />
+      <Footer />
     </div>
   );
 }

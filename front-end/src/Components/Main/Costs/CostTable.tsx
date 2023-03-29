@@ -1,12 +1,18 @@
 interface DataProps {
   networkFrom: string;
-  data: {};
+  data: MyData;
 }
 
-const Table = ({ networkFrom, data }: DataProps) => {
-  console.log(data);
+type MyData = {
+  [key: string]: {
+    "gas fee": string;
+    "withholding fee": string;
+    total: string;
+  };
+};
 
-  const transformData = (data: any) => {
+const Table = ({ networkFrom, data }: DataProps) => {
+  const transformData = (data: MyData) => {
     const transformedData = [];
     for (const [key, value] of Object.entries(data)) {
       const networkTo = key;
@@ -26,7 +32,7 @@ const Table = ({ networkFrom, data }: DataProps) => {
   console.log(transformData(data));
   return (
     <div className="overflow-x-auto pt-8">
-      <div>From: {networkFrom} </div>
+      <div className="text-2xl py-2">From: {networkFrom} </div>
       <table className="table table-compact w-full">
         <thead>
           <tr>
