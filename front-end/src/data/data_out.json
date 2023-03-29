@@ -1,0 +1,392 @@
+{
+  "Arbitrum Nova": {
+    "Optimism": {
+      "gas fee": 32.92,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "Polygon": {
+      "gas fee": 25.58,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "Immutable X": {
+      "gas fee": 30.17,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "zkSync Lite": {
+      "gas fee": 21.53,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "Loopring": {
+      "gas fee": 23.03,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "Ethereum": {
+      "gas fee": 13.36,
+      "trading fee": 0.0,
+      "withholding fee": 10.59,
+      "total": 10.59
+    },
+    "BNB Chain": {
+      "gas fee": 13.59,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "Arbitrum": {
+      "gas fee": 23.69,
+      "trading fee": 0.0,
+      "withholding fee": 1.02,
+      "total": 1.02
+    }
+  },
+  "BNB Chain": {
+    "Optimism": {
+      "gas fee": 20.45,
+      "trading fee": 0.0,
+      "withholding fee": 1.36,
+      "total": 1.36
+    },
+    "Immutable X": {
+      "gas fee": 16.86,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "Polygon": {
+      "gas fee": 9.81,
+      "trading fee": 0.0,
+      "withholding fee": 0.51,
+      "total": 0.51
+    },
+    "Arbitrum": {
+      "gas fee": 11.23,
+      "trading fee": 0.0,
+      "withholding fee": 1.37,
+      "total": 1.37
+    },
+    "Loopring": {
+      "gas fee": 9.06,
+      "trading fee": 0.0,
+      "withholding fee": 1.02,
+      "total": 1.02
+    },
+    "zkSync Lite": {
+      "gas fee": 6.79,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    }
+  },
+  "Loopring": {
+    "Immutable X": {
+      "gas fee": 16.87,
+      "trading fee": 0.0,
+      "withholding fee": 1.19,
+      "total": 1.19
+    },
+    "Arbitrum": {
+      "gas fee": 11.93,
+      "trading fee": 0.0,
+      "withholding fee": 1.88,
+      "total": 1.88
+    },
+    "Polygon": {
+      "gas fee": 9.87,
+      "trading fee": 0.0,
+      "withholding fee": 1.2,
+      "total": 1.2
+    },
+    "zkSync Lite": {
+      "gas fee": 7.76,
+      "trading fee": 0.0,
+      "withholding fee": 2.22,
+      "total": 2.22
+    },
+    "Optimism": {
+      "gas fee": 15.83,
+      "trading fee": 0.0,
+      "withholding fee": 1.88,
+      "total": 1.88
+    }
+  },
+  "Immutable X": {
+    "Arbitrum Nova": {
+      "gas fee": 68.3,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "BNB Chain": {
+      "gas fee": 68.09,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "zkSync Lite": {
+      "gas fee": 63.79,
+      "trading fee": 0.0,
+      "withholding fee": 1.19,
+      "total": 1.19
+    },
+    "Ethereum": {
+      "gas fee": 56.82,
+      "trading fee": 0.0,
+      "withholding fee": 10.58,
+      "total": 10.58
+    },
+    "Loopring": {
+      "gas fee": 61.34,
+      "trading fee": 0.0,
+      "withholding fee": 1.19,
+      "total": 1.19
+    },
+    "Optimism": {
+      "gas fee": 69.22,
+      "trading fee": 0.0,
+      "withholding fee": 1.71,
+      "total": 1.71
+    },
+    "Polygon": {
+      "gas fee": 61.5,
+      "trading fee": 0.0,
+      "withholding fee": 1.02,
+      "total": 1.02
+    },
+    "Arbitrum": {
+      "gas fee": 61.26,
+      "trading fee": 0.0,
+      "withholding fee": 1.71,
+      "total": 1.71
+    }
+  },
+  "Arbitrum": {
+    "Arbitrum Nova": {
+      "gas fee": 21.54,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "zkSync Lite": {
+      "gas fee": 29.11,
+      "trading fee": 0.0,
+      "withholding fee": 2.22,
+      "total": 2.22
+    },
+    "Ethereum": {
+      "gas fee": 19.36,
+      "trading fee": 0.0,
+      "withholding fee": 10.59,
+      "total": 10.59
+    },
+    "Immutable X": {
+      "gas fee": 34.42,
+      "trading fee": 0.0,
+      "withholding fee": 1.2,
+      "total": 1.2
+    },
+    "Optimism": {
+      "gas fee": 36.54,
+      "trading fee": 0.0,
+      "withholding fee": 1.2,
+      "total": 1.2
+    },
+    "Polygon": {
+      "gas fee": 28.17,
+      "trading fee": 0.0,
+      "withholding fee": 1.02,
+      "total": 1.02
+    },
+    "BNB Chain": {
+      "gas fee": 17.21,
+      "trading fee": 0.0,
+      "withholding fee": 0.51,
+      "total": 0.51
+    },
+    "Loopring": {
+      "gas fee": 24.13,
+      "trading fee": 0.0,
+      "withholding fee": 1.19,
+      "total": 1.19
+    }
+  },
+  "zkSync Lite": {
+    "Immutable X": {
+      "gas fee": 32.68,
+      "trading fee": 0.0,
+      "withholding fee": 1.19,
+      "total": 1.19
+    },
+    "Loopring": {
+      "gas fee": 25.83,
+      "trading fee": 0.0,
+      "withholding fee": 1.19,
+      "total": 1.19
+    },
+    "Optimism": {
+      "gas fee": 35.5,
+      "trading fee": 0.0,
+      "withholding fee": 1.37,
+      "total": 1.37
+    },
+    "BNB Chain": {
+      "gas fee": 15.58,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "Arbitrum Nova": {
+      "gas fee": 15.34,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "Arbitrum": {
+      "gas fee": 24.99,
+      "trading fee": 0.0,
+      "withholding fee": 1.88,
+      "total": 1.88
+    },
+    "Polygon": {
+      "gas fee": 22.56,
+      "trading fee": 0.0,
+      "withholding fee": 1.19,
+      "total": 1.19
+    },
+    "Ethereum": {
+      "gas fee": 14.26,
+      "trading fee": 0.0,
+      "withholding fee": 10.57,
+      "total": 10.57
+    }
+  },
+  "Optimism": {
+    "Immutable X": {
+      "gas fee": 125.38,
+      "trading fee": 0.0,
+      "withholding fee": 1.19,
+      "total": 1.19
+    },
+    "Polygon": {
+      "gas fee": 115.14,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "Arbitrum": {
+      "gas fee": 106.45,
+      "trading fee": 0.0,
+      "withholding fee": 1.88,
+      "total": 1.88
+    },
+    "Ethereum": {
+      "gas fee": 94.36,
+      "trading fee": 0.0,
+      "withholding fee": 10.58,
+      "total": 10.58
+    },
+    "zkSync Lite": {
+      "gas fee": 90.63,
+      "trading fee": 0.0,
+      "withholding fee": 2.22,
+      "total": 2.22
+    }
+  },
+  "Ethereum": {
+    "zkSync Lite": {
+      "gas fee": 7.84,
+      "trading fee": 0.0,
+      "withholding fee": 2.22,
+      "total": 2.22
+    },
+    "Polygon": {
+      "gas fee": 9.67,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "Optimism": {
+      "gas fee": 18.55,
+      "trading fee": 0.0,
+      "withholding fee": 2.05,
+      "total": 2.05
+    },
+    "Loopring": {
+      "gas fee": 8.71,
+      "trading fee": 0.0,
+      "withholding fee": 1.2,
+      "total": 1.2
+    },
+    "Immutable X": {
+      "gas fee": 14.83,
+      "trading fee": 0.0,
+      "withholding fee": 1.19,
+      "total": 1.19
+    },
+    "Arbitrum": {
+      "gas fee": 9.65,
+      "trading fee": 0.0,
+      "withholding fee": 2.05,
+      "total": 2.05
+    }
+  },
+  "Polygon": {
+    "zkSync Lite": {
+      "gas fee": 67.94,
+      "trading fee": 0.0,
+      "withholding fee": 2.22,
+      "total": 2.22
+    },
+    "BNB Chain": {
+      "gas fee": 59.21,
+      "trading fee": 0.0,
+      "withholding fee": 0.51,
+      "total": 0.51
+    },
+    "Loopring": {
+      "gas fee": 68.2,
+      "trading fee": 0.0,
+      "withholding fee": 1.2,
+      "total": 1.2
+    },
+    "Arbitrum": {
+      "gas fee": 70.29,
+      "trading fee": 0.0,
+      "withholding fee": 1.88,
+      "total": 1.88
+    },
+    "Arbitrum Nova": {
+      "gas fee": 58.18,
+      "trading fee": 0.0,
+      "withholding fee": 0.85,
+      "total": 0.85
+    },
+    "Optimism": {
+      "gas fee": 74.29,
+      "trading fee": 0.0,
+      "withholding fee": 1.36,
+      "total": 1.36
+    },
+    "Immutable X": {
+      "gas fee": 61.67,
+      "trading fee": 0.0,
+      "withholding fee": 1.19,
+      "total": 1.19
+    },
+    "Ethereum": {
+      "gas fee": 51.61,
+      "trading fee": 0.0,
+      "withholding fee": 10.57,
+      "total": 10.57
+    }
+  }
+}

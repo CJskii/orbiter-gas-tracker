@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Donate from "./Components/Donate";
-import Navbar from "./Components/Navbar";
+import Donate from "./Components/Navbar/Donate";
+import Navbar from "./Components/Navbar/Navbar";
+import Main from "./Components/Main/Main";
 function App() {
   const [theme, setTheme] = useState("dark");
 
@@ -13,9 +14,13 @@ function App() {
   };
 
   return (
-    <div className="App min-h-[100vh]" data-theme={theme}>
-      <Donate />
+    <div
+      className="App min-h-[100vh] flex flex-col justify-start items-center"
+      data-theme={theme}
+    >
+      <Donate theme={theme} />
       <Navbar theme={theme} toggleTheme={toggleTheme} />
+      <Main />
     </div>
   );
 }

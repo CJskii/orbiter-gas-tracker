@@ -1,15 +1,26 @@
-import { useState } from "react";
-const Donate = () => {
+import { useEffect, useState } from "react";
+const Donate = (theme: { theme: string }) => {
   const [hover, setHover] = useState<boolean>(false);
-  const [hoverColor, setHoverColor] = useState<string>("text-orange-300");
+  const [hoverColorDark, setHoverColorDark] =
+    useState<string>("text-orange-300");
+  const [hoverColorRetro, setHoverColorRetro] =
+    useState<string>("text-green-800");
+  const [currentTheme, setCurrentTheme] = useState<string>(theme.theme);
 
   const hoverStyle = () => {
-    if (hover) {
-      return hoverColor;
+    if (hover && currentTheme === "dark") {
+      return hoverColorDark;
+    } else if (hover && currentTheme === "retro") {
+      return hoverColorRetro;
     }
   };
+
+  useEffect(() => {
+    setCurrentTheme(theme.theme);
+  }, [theme.theme]);
+
   return (
-    <div className="alert shadow-lg flex justify-center items-center">
+    <div className="alert shadow-lg flex justify-center items-center ">
       <div
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
@@ -29,7 +40,7 @@ const Donate = () => {
         </svg>
         {/* This is the text that will be displayed on the page. */}
 
-        <span className={`hover:cursor-pointer hover:${hoverColor}`}>
+        <span className={`hover:cursor-pointer ${hoverStyle()}`}>
           Support this website!
         </span>
       </div>
