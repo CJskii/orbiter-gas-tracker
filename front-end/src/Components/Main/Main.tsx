@@ -15,7 +15,7 @@ const Main = () => {
       <GasInfo />
       <Charts />
       <Costs />
-      <Average />
+      {/* <Average /> */}
       <GasExplained />
     </main>
   );

@@ -1,4 +1,4 @@
-const Description = () => {
+const OrbiterDescription = () => {
   return (
     <p className="py-4 text-lg">
       Orbiter Finance offers a secure and efficient way to transfer funds across
@@ -9,4 +9,4 @@ const Description = () => {
   );
 };
 
-export default Description;
+export default OrbiterDescription;
