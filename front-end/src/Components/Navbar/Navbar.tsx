@@ -1,5 +1,9 @@
 import DarkIcon from "./DarkIcon";
 import LightIcon from "./LightIcon";
+import React, { useEffect, useContext } from "react";
+import { NetworkContext } from "../../App";
+
+// create context for current network in navbar and export it to be used in other components (e.g. GasPrice.tsx) to display the current network data typescript
 
 const Navbar = ({
   theme,
@@ -8,6 +12,8 @@ const Navbar = ({
   theme: string;
   toggleTheme: () => void;
 }) => {
+  const [currentNetwork, setCurrentNetwork] = useContext(NetworkContext);
+
   const renderIcon = () => {
     if (theme === "dark") {
       return <LightIcon />;
@@ -15,6 +21,10 @@ const Navbar = ({
       return <DarkIcon />;
     }
   };
+
+  useEffect(() => {
+    console.log(currentNetwork);
+  }, [currentNetwork]);
 
   return (
     <div className="navbar bg-base-200">
@@ -55,10 +65,12 @@ const Navbar = ({
               </a>
               <ul className="p-2 bg-base-300 z-10">
                 <li>
-                  <a>Arbitrum</a>
+                  <a onClick={() => setCurrentNetwork("Arbitrum")}>Arbitrum</a>
                 </li>
                 <li>
-                  <a>Arbitrum Nova</a>
+                  <a onClick={() => setCurrentNetwork("Arbitrum Nova")}>
+                    Arbitrum Nova
+                  </a>
                 </li>
               </ul>
             </li>
@@ -77,30 +89,36 @@ const Navbar = ({
               </a>
               <ul className="p-2 bg-base-300 z-10">
                 <li>
-                  <a>ZKsync Lite</a>
+                  <a onClick={() => setCurrentNetwork("ZKsync Lite")}>
+                    ZKsync Lite
+                  </a>
                 </li>
                 <li>
-                  <a>ZKsync Era</a>
+                  <a onClick={() => setCurrentNetwork("ZKsync Era")}>
+                    ZKsync Era
+                  </a>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Optimism</a>
+              <a onClick={() => setCurrentNetwork("Optimism")}>Optimism</a>
             </li>
             <li>
-              <a>Immutable X</a>
+              <a onClick={() => setCurrentNetwork("Immutable X")}>
+                Immutable X
+              </a>
             </li>
             <li>
-              <a>Loopring</a>
+              <a onClick={() => setCurrentNetwork("Loopring")}>Loopring</a>
             </li>
             <li>
-              <a>Ethereum</a>
+              <a onClick={() => setCurrentNetwork("Ethereum")}>Ethereum</a>
             </li>
             <li>
-              <a>Polygon</a>
+              <a onClick={() => setCurrentNetwork("Polygon")}>Polygon</a>
             </li>
             <li>
-              <a>BNB Chain</a>
+              <a onClick={() => setCurrentNetwork("BNB Chain")}>BNB Chain</a>
             </li>
           </ul>
         </div>
@@ -123,10 +141,12 @@ const Navbar = ({
             </a>
             <ul className="p-2 bg-base-300 z-10">
               <li>
-                <a>Arbitrum</a>
+                <a onClick={() => setCurrentNetwork("Arbitrum")}>Arbitrum</a>
               </li>
               <li>
-                <a>Arbitrum Nova</a>
+                <a onClick={() => setCurrentNetwork("Arbitrum Nova")}>
+                  Arbitrum Nova
+                </a>
               </li>
             </ul>
           </li>
@@ -145,30 +165,34 @@ const Navbar = ({
             </a>
             <ul className="p-2 bg-base-300 z-10">
               <li>
-                <a>ZKsync Lite</a>
+                <a onClick={() => setCurrentNetwork("ZKsync Lite")}>
+                  ZKsync Lite
+                </a>
               </li>
               <li>
-                <a>ZKsync Era</a>
+                <a onClick={() => setCurrentNetwork("ZKsync Era")}>
+                  ZKsync Era
+                </a>
               </li>
             </ul>
           </li>
           <li>
-            <a>Optimism</a>
+            <a onClick={() => setCurrentNetwork("Optimism")}>Optimism</a>
           </li>
           <li>
-            <a>Immutable X</a>
+            <a onClick={() => setCurrentNetwork("Immutable X")}>Immutable X</a>
           </li>
           <li>
-            <a>Loopring</a>
+            <a onClick={() => setCurrentNetwork("Loopring")}>Loopring</a>
           </li>
           <li>
-            <a>Ethereum</a>
+            <a onClick={() => setCurrentNetwork("Ethereum")}>Ethereum</a>
           </li>
           <li>
-            <a>Polygon</a>
+            <a onClick={() => setCurrentNetwork("Polygon")}>Polygon</a>
           </li>
           <li>
-            <a>BNB Chain</a>
+            <a onClick={() => setCurrentNetwork("BNB Chain")}>BNB Chain</a>
           </li>
         </ul>
       </div>
