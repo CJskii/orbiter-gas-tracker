@@ -1,36 +1,31 @@
 import Table from "./CostTable";
 import * as rawData from "../../../data/data_out.json";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { NetworkContext } from "../../../App";
 const Costs = () => {
   const data = JSON.parse(JSON.stringify(rawData));
   const [network, setNetwork] = useContext(NetworkContext);
-  const [dataFound, setDataFound] = useState(false);
+  console.log(data);
+
+  const renderTable = () => {
+    if (data[network]) {
+      return <Table data={data[network]} networkFrom={network} />;
+    } else {
+      return (
+        <div className="py-8">
+          <span className="text-2xl">
+            Currently data for {network} is not available
+          </span>
+          <p className="text-lg">Please check back later...</p>
+        </div>
+      );
+    }
+  };
 
   return (
-    <div>
+    <div className="pt-16 text-2xl">
       <div>Latest Swap Transaction costs</div>
-      <div className="overflow-x-auto pt-8">
-        {Object.keys(data).map((networkFrom, index) => {
-          if (networkFrom == network) {
-            return (
-              <Table
-                data={data[networkFrom]}
-                networkFrom={networkFrom}
-                key={index}
-              />
-            );
-          }
-        })}
-        {dataFound ? null : (
-          <div className="py-8">
-            <span className="text-2xl">
-              Currently data for {network} is not available
-            </span>
-            <p className="text-lg">Please check back later...</p>
-          </div>
-        )}
-      </div>
+      <div className="overflow-x-auto">{renderTable()}</div>
     </div>
   );
 };
