@@ -1,8 +1,8 @@
 import { useState, createContext } from "react";
-import Donate from "./Components/Navbar/Donate";
-import Navbar from "./Components/Navbar/Navbar";
-import Main from "./Components/Main/Main";
-import Footer from "./Components/Footer/Footer";
+import SupportUs from "./Components/Support/index";
+import Navbar from "./Components/Navbar/index";
+import Main from "./Components/Main/index";
+import Footer from "./Components/Footer/index";
 
 export const NetworkContext = createContext<
   [string, React.Dispatch<React.SetStateAction<string>>]
@@ -26,8 +26,8 @@ function App() {
         className="App min-h-[100vh] flex flex-col justify-start items-center"
         data-theme={theme}
       >
-        <Donate theme={theme} />
-        <Navbar theme={theme} toggleTheme={toggleTheme} />
+        <SupportUs theme={theme} />
+        <Navbar toggleTheme={toggleTheme} />
         <Main />
         <Footer />
       </div>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-const Donate = (theme: { theme: string }) => {
+
+const SupportUs = (theme: { theme: string }) => {
   const [hover, setHover] = useState<boolean>(false);
   const [hoverColorDark, setHoverColorDark] =
     useState<string>("text-orange-300");
@@ -48,4 +49,4 @@ const Donate = (theme: { theme: string }) => {
   );
 };
 
-export default Donate;
+export default SupportUs;

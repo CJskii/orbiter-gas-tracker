@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./Header/Header";
 import GasLabel from "./Header/GasLabel";
 import GasInfo from "./Header/GasInfo";
